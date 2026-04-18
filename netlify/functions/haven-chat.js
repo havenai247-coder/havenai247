@@ -7,7 +7,7 @@ exports.handler = async function (event, context) {
   }
 
   const headers = {
-    "Access-Control-Allow-Origin": "https://havenai247.com",
+    "Access-Control-Allow-Origin":"*",
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
   };
