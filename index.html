@@ -1288,14 +1288,13 @@ let histories = { chat:[], crisis:[], craving:[] };
 let isLoading = false;
 
 async function callHaven(system, messages) {
-  const r = await fetch('/api/haven-chat', {
+  const r = await fetch {https://api.anthropic.com/v1/messages',{
     method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({ system, messages })
-  });
+   headers:{'Content-Type':'application/json','x-api-key':'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','anthropic-version':'2023
+  body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:1000,system:system,messages:messages.slice(-20)})
   const d = await r.json();
   return d.reply || "I'm still here with you… something went quiet. Take a breath and try again.";
-}
+ return d.content&&d.content[0]?d.content[0].text:"I'm here with you.";           
 
 async function sendMsg() { await sendToMode('chat','chatInput','chatMessages',SYSTEM_MAIN); }
 async function sendCrisisMsg() { await sendToMode('crisis','crisisInput','crisisMessages',SYSTEM_CRISIS); }
