@@ -919,36 +919,23 @@ footer { background:var(--haven-blue-dark); padding:60px; }
     <div class="portal-main">
 
       <!-- CHAT -->
-      <div id="panel-chat" class="portal-panel active">
-        <div class="chat-wrap">
-          <h2 class="panel-title lora">Talk to Haven</h2>
-          <p class="panel-subtitle">Your safe space. No judgment. No rush. Haven is here.</p>
-          <div class="crisis-mode-bar">
-            <div class="crisis-mode-text">Feeling overwhelmed right now? <strong>Crisis Mode</strong> is one tap away.</div>
-            <button class="crisis-mode-btn" onclick="switchTab('crisis',null)">Open Crisis Mode</button>
-          </div>
-          <div class="chat-box">
-            <div class="chat-header">
-              <div class="chat-avatar">🌿</div>
-              <div class="chat-header-info">
-                <h3>Haven</h3>
-                <p><span class="status-pulse"></span>Here with you, right now</p>
-              </div>
-            </div>
-            <div class="crisis-alert">🆘 In immediate danger? Call or text <a href="tel:988"><strong>988</strong></a> · Text HOME to <a href="sms:741741"><strong>741741</strong></a></div>
-            <div class="chat-messages" id="chatMessages">
-              <div class="msg haven">
-                <div class="msg-av">🌿</div>
-                <div class="bubble">Hey… I'm really glad you're here. This is your space — no rush, no judgment, no expectations. What's been weighing on you today?</div>
-              </div>
-            </div>
-            <div class="chat-input-row">
-              <textarea class="chat-textarea" id="chatInput" rows="1" placeholder="Share what's on your mind…" onkeydown="handleKey(event)"></textarea>
-              <button class="send-btn" onclick="sendMsg()">➤</button>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- NEW CHATBASE CHAT -->
+<div id="panel-chat" class="portal-panel active">
+  <div class="chat-wrap">
+    <h2 class="panel-title lora">Talk to Haven</h2>
+    <p class="panel-subtitle">Your safe space. No judgment. No rush. Haven is here.</p>
+    
+    <div style="width: 100%; height: 680px; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 25px 0;">
+      <iframe
+          src="https://www.chatbase.co/chatbot-iframe/JB_pNKHHkBogX_ihI-sq9"
+          width="100%"
+          style="height: 100%; min-height: 680px;"
+          frameborder="0"
+          allow="microphone"
+      ></iframe>
+    </div>
+  </div>
+</div>
 
       <!-- CRISIS MODE -->
       <div id="panel-crisis" class="portal-panel">
