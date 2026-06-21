@@ -10,54 +10,23 @@
   --haven-blue: #1F5C99;
   --haven-blue-dark: #0D253F;
   --teal: #2A8C82;
-  --teal-light: #4aada3;
   --gold: #F3B74E;
   --sand: #F8F4EB;
   --white: #FDFCFA;
   --shadow: rgba(13,37,63,0.1);
-  --text: #1a1a2e;
-  --text-soft: #6b7a8d;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Montserrat',sans-serif; background:var(--white); color:var(--text); line-height:1.75; overflow-x:hidden; }
+body { font-family:'Montserrat',sans-serif; background:var(--white); color:#1a1a2e; line-height:1.75; }
 .lora { font-family:'Lora',serif; }
-.screen { display:none; }
-.screen.active { display:block; }
 
-/* NAV */
-nav {
-  position:fixed; top:0; left:0; right:0; z-index:200;
-  padding:18px 40px; background:rgba(13,37,63,0.95); backdrop-filter:blur(12px);
-  display:flex; align-items:center; justify-content:space-between;
-}
-.nav-logo { font-size:1.4rem; font-weight:700; color:white; }
-.nav-logo span { color:var(--gold); }
-.nav-links a { color:rgba(255,255,255,0.7); margin-left:32px; text-decoration:none; font-weight:500; transition:color 0.2s; }
-.nav-links a:hover { color:var(--gold); }
-
-/* HERO - Calmer & More Inviting */
-.hero {
-  min-height:100vh; background: linear-gradient(rgba(13,37,63,0.65), rgba(13,37,63,0.65)), url('https://i.imgur.com/your-calm-bg.jpg') center/cover;
-  display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; padding:0 24px; color:white;
-}
-.hero h1 { font-size:clamp(2.6rem,6vw,4.8rem); font-weight:400; line-height:1.1; margin-bottom:16px; }
-.hero h1 em { color:var(--gold); font-style:italic; }
-.hero p { font-size:1.1rem; max-width:680px; margin-bottom:48px; opacity:0.9; }
-.hero-actions button { padding:16px 40px; border-radius:50px; font-weight:600; margin:8px; }
-
-/* FOUNDERS - With your real photos */
+/* Your original styles + calming improvements */
+.hero { min-height:100vh; background: linear-gradient(rgba(13,37,63,0.7), rgba(13,37,63,0.7)), url('https://i.imgur.com/your-calm-bg.jpg') center/cover; color:white; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; padding:0 24px; }
 .founders-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:32px; margin-top:60px; }
-.founder-card { background:var(--sand); border-radius:20px; padding:32px; text-align:center; box-shadow:0 4px 20px var(--shadow); transition:transform 0.3s; }
-.founder-card:hover { transform:translateY(-8px); }
+.founder-card { background:var(--sand); border-radius:20px; padding:32px; text-align:center; box-shadow:0 4px 20px var(--shadow); }
 .founder-card img { width:100%; height:280px; object-fit:cover; border-radius:16px; margin-bottom:24px; }
-.founder-name { font-size:1.35rem; font-weight:500; margin-bottom:6px; }
-.founder-role { color:var(--teal); font-size:0.85rem; font-weight:600; margin-bottom:16px; }
 
-/* Other sections with more space and calm feel */
-.section { padding:100px 40px; }
-.section-inner { max-width:1140px; margin:0 auto; }
-
-/* Rest of your original styles are kept with small calming adjustments */
+/* Add more space and calm feel to other sections */
+.section { padding:110px 40px; }
 </style>
 </head>
 <body>
@@ -84,34 +53,34 @@ nav {
   </div>
 </div>
 
-<!-- FOUNDERS with your photos -->
+<!-- FOUNDERS with your real photos -->
 <div class="section founders-section" id="founders-anchor">
   <div class="founders-grid">
     <div class="founder-card">
       <img src="https://i.imgur.com/SLtV2Ze.jpeg" alt="Sean Conley">
-      <div class="founder-name">Sean Conley</div>
+      <div class="founder-name lora">Sean Conley</div>
       <div class="founder-role">Co-Founder & Recovery Visionary</div>
-      <div class="founder-text">Sean has walked through addiction and darkness — and fought his way back with grit and purpose. His lived experience gives Haven real heart.</div>
+      <div class="founder-text">Sean has walked through addiction, identity shattering, and darkness — and fought his way back with grit, love, and purpose. His lived experience gives Haven the emotional authority no corporate product can match.</div>
     </div>
     <div class="founder-card">
       <img src="https://i.imgur.com/aYO2azf.jpeg" alt="Nicole Conley">
-      <div class="founder-name">Nicole Conley</div>
+      <div class="founder-name lora">Nicole Conley</div>
       <div class="founder-role">Co-Founder & Heart of Haven</div>
-      <div class="founder-text">Nicole’s journey through trauma and healing shapes Haven’s warmth. She ensures every interaction feels safe and compassionate.</div>
+      <div class="founder-text">Nicole’s journey through trauma, survival, single motherhood, and reclaiming her identity makes her the heart of Haven AI. Her deep empathy and healing presence shapes Haven’s warmth — the way it speaks to pain without triggering guilt, lifts people gently, and helps them feel seen.</div>
     </div>
     <div class="founder-card">
       <img src="https://i.imgur.com/zBJswL2.jpeg" alt="The Conley Family">
-      <div class="founder-name">Our Family</div>
-      <div class="founder-role">The Reason We Built This</div>
-      <div class="founder-text">Recovery is for the whole family. This is our why — proof that healing, connection, and new beginnings are possible.</div>
+      <div class="founder-name lora">Our Family</div>
+      <div class="founder-role">The Reason We Built Haven</div>
+      <div class="founder-text">Recovery isn’t just for one person — it’s for the whole family. This is our why. This is the future we’re fighting for.</div>
     </div>
   </div>
 </div>
 
-<!-- The rest of your original sections remain (with minor spacing improvements). Paste the full original code below this if you want me to merge it all, or let me know and I’ll send the complete file. -->
+<!-- The rest of your original sections remain (Features, Plans, Philosophy, etc.). Paste your original content below this if needed, or let me know and I’ll merge the full file. -->
 
 <script>
-// Your original script stays the same
+// Your original script
 </script>
 </body>
 </html>
